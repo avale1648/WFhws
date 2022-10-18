@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF1.1hw[Maze]", "WF1.1hw[Calculator]\WF1.1hw[Maze].csproj", "{D1330586-B0F3-47A5-A93F-B5D1034EEDFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF1.2hw[Calculator]", "WF1.2hw[Calculator]\WF1.2hw[Calculator].csproj", "{DC282980-C968-4ADD-B1E7-B39DDD9DC9F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1330586-B0F3-47A5-A93F-B5D1034EEDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1330586-B0F3-47A5-A93F-B5D1034EEDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1330586-B0F3-47A5-A93F-B5D1034EEDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1330586-B0F3-47A5-A93F-B5D1034EEDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC282980-C968-4ADD-B1E7-B39DDD9DC9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC282980-C968-4ADD-B1E7-B39DDD9DC9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC282980-C968-4ADD-B1E7-B39DDD9DC9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC282980-C968-4ADD-B1E7-B39DDD9DC9F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1E588A8-669F-4E54-B6E7-BDF322224758}
+	EndGlobalSection
+EndGlobal
