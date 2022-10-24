@@ -168,5 +168,10 @@ namespace WF1._2hw_Calculator_
                     break;
             }
         }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            Cursor.Clip = Bounds;
+        }
     }
 }
