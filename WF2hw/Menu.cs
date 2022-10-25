@@ -58,7 +58,8 @@ namespace WF2hw
 
         private void requestToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Req req = new Req();
+            req.Show();
         }
     }
 }

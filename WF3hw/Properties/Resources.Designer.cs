@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WF3hw.Properties
+namespace WF2hw.Properties
 {
 
 

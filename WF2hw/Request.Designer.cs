@@ -76,7 +76,7 @@
             this.req_gb.Controls.Add(this.label1);
             this.req_gb.Location = new System.Drawing.Point(12, 12);
             this.req_gb.Name = "req_gb";
-            this.req_gb.Size = new System.Drawing.Size(236, 311);
+            this.req_gb.Size = new System.Drawing.Size(236, 299);
             this.req_gb.TabIndex = 0;
             this.req_gb.TabStop = false;
             this.req_gb.Text = "Request";
@@ -89,7 +89,6 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Proceed";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // radioButton2
             // 
@@ -133,7 +132,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(71, 218);
+            this.dateTimePicker1.Location = new System.Drawing.Point(71, 224);
             this.dateTimePicker1.MaxDate = new System.DateTime(2022, 10, 24, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(150, 20);
@@ -151,10 +150,6 @@
             // Country_combox
             // 
             this.Country_combox.FormattingEnabled = true;
-            this.Country_combox.Items.AddRange(new object[] {
-            "Russia",
-            "Germany",
-            "UK"});
             this.Country_combox.Location = new System.Drawing.Point(71, 121);
             this.Country_combox.Name = "Country_combox";
             this.Country_combox.Size = new System.Drawing.Size(150, 21);
@@ -247,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 327);
+            this.ClientSize = new System.Drawing.Size(260, 323);
             this.Controls.Add(this.req_gb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

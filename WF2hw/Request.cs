@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace WF2hw
 {
@@ -19,22 +19,20 @@ namespace WF2hw
             InitializeComponent();
             dateTimePicker1.MinDate = new DateTime(DateTime.Now.Year - 60, DateTime.Now.Month, DateTime.Now.Day);
             request += $"Surname: {Surname.Text}\nName: {name.Text}\n Patronimic: {Patronimic.Text}\nCountry: ";
-
-            if(Country_combox.SelectedIndex == 0)
+            Country_combox.Items.AddRange(new string[] {"Russia","Germany","UK" });
+            request += Country_combox.SelectedIndex.ToString();
+            if (Country_combox.SelectedIndex == 0)
             {
-                request += "Russia\n";
                 CityComBox.Items.Clear();
                 CityComBox.Items.AddRange(new string[] { "Moscow, Saint Petersburg, Krasnodar" });
             }
-            if(Country_combox.SelectedIndex == 1)
+            if (Country_combox.SelectedIndex == 1)
             {
-                request += "Germany\n";
                 CityComBox.Items.Clear();
                 CityComBox.Items.AddRange(new string[] { "Berlin, Hamburg, Bavaria" });
             }
-            if(Country_combox.SelectedIndex == 2)
+            if (Country_combox.SelectedIndex == 2)
             {
-                request += "UK\n";
                 CityComBox.Items.Clear();
                 CityComBox.Items.AddRange(new string[] { "London, Manchester, Chelsea" });
             }
@@ -47,12 +45,8 @@ namespace WF2hw
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            DialogResult dialog = MessageBox.Show(request, "Filled request", MessageBoxButtons.OKCancel);
-            if(dialog == DialogResult.OK)
-            {
+            MessageBox.Show("request", "Filled Request", MessageBoxButtons.OKCancel);
                 StreamWriter streamWriter = new StreamWriter(".\\Request.txt");
-            }
         }
     }
 }
