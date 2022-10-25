@@ -52,8 +52,8 @@ namespace WF2hw
 
         private void timerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Timer timer = new Timer();
-            timer.Show();
+            TimerForm timerForm = new TimerForm();
+            timerForm.Show();
         }
 
         private void requestToolStripMenuItem_Click(object sender, EventArgs e)
