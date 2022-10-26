@@ -48,6 +48,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.req_gb.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +58,8 @@
             this.req_gb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.req_gb.Controls.Add(this.button2);
+            this.req_gb.Controls.Add(this.label8);
             this.req_gb.Controls.Add(this.button1);
             this.req_gb.Controls.Add(this.radioButton2);
             this.req_gb.Controls.Add(this.radioButton1);
@@ -76,14 +80,14 @@
             this.req_gb.Controls.Add(this.label1);
             this.req_gb.Location = new System.Drawing.Point(12, 12);
             this.req_gb.Name = "req_gb";
-            this.req_gb.Size = new System.Drawing.Size(236, 299);
+            this.req_gb.Size = new System.Drawing.Size(486, 311);
             this.req_gb.TabIndex = 0;
             this.req_gb.TabStop = false;
             this.req_gb.Text = "Request";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 273);
+            this.button1.Location = new System.Drawing.Point(13, 280);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 25);
             this.button1.TabIndex = 17;
@@ -154,6 +158,7 @@
             this.Country_combox.Name = "Country_combox";
             this.Country_combox.Size = new System.Drawing.Size(150, 21);
             this.Country_combox.TabIndex = 10;
+            this.Country_combox.SelectedIndexChanged += new System.EventHandler(this.Country_combox_SelectedIndexChanged);
             // 
             // PhoneNoTxtBox
             // 
@@ -238,11 +243,28 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Surname";
             // 
+            // label8
+            // 
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.Location = new System.Drawing.Point(240, 21);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(230, 246);
+            this.label8.TabIndex = 18;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(240, 280);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 25);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "Save";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Req
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 323);
+            this.ClientSize = new System.Drawing.Size(510, 335);
             this.Controls.Add(this.req_gb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -277,6 +299,8 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label8;
     }
 }
 

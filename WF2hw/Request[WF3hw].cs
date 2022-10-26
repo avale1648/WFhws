@@ -16,26 +16,11 @@ namespace WF2hw
         string request;
         public Req()
         {
-            InitializeComponent();
+            InitializeComponent(); button2.Enabled = false;
             dateTimePicker1.MinDate = new DateTime(DateTime.Now.Year - 60, DateTime.Now.Month, DateTime.Now.Day);
             request += $"Surname: {Surname.Text}\nName: {name.Text}\n Patronimic: {Patronimic.Text}\nCountry: ";
             Country_combox.Items.AddRange(new string[] {"Russia","Germany","UK" });
             request += Country_combox.SelectedIndex.ToString();
-            if (Country_combox.SelectedIndex == 0)
-            {
-                CityComBox.Items.Clear();
-                CityComBox.Items.AddRange(new string[] { "Moscow, Saint Petersburg, Krasnodar" });
-            }
-            if (Country_combox.SelectedIndex == 1)
-            {
-                CityComBox.Items.Clear();
-                CityComBox.Items.AddRange(new string[] { "Berlin, Hamburg, Bavaria" });
-            }
-            if (Country_combox.SelectedIndex == 2)
-            {
-                CityComBox.Items.Clear();
-                CityComBox.Items.AddRange(new string[] { "London, Manchester, Chelsea" });
-            }
             request += $"City: {CityComBox.SelectedIndex.ToString()}\n";
             request += $"Phone number: {PhoneNoTxtBox.Text}\n";
             request += $"Birthdate: {dateTimePicker1.Value.ToShortDateString()}";
@@ -45,8 +30,26 @@ namespace WF2hw
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("request", "Filled Request", MessageBoxButtons.OKCancel);
-                StreamWriter streamWriter = new StreamWriter(".\\Request.txt");
+            label8.Text = request; button2.Enabled = true;
+        }
+
+        private void Country_combox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Country_combox.SelectedIndex == 0)
+            {
+                CityComBox.Items.Clear();
+                CityComBox.Items.AddRange(new string[] { "Moscow", "Saint Petersburg", "Krasnodar" });
+            }
+            if (Country_combox.SelectedIndex == 1)
+            {
+                CityComBox.Items.Clear();
+                CityComBox.Items.AddRange(new string[] { "Berlin", "Hamburg", "Bavaria" });
+            }
+            if (Country_combox.SelectedIndex == 2)
+            {
+                CityComBox.Items.Clear();
+                CityComBox.Items.AddRange(new string[] { "London", "Manchester", "Chelsea" });
+            }
         }
     }
 }
