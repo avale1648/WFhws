@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF2hw[MessageBoxes_Mouse_Ti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF4hw", "WF4hw\WF4hw.csproj", "{5252DF4C-193B-41C4-B886-E304561CA980}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF5hw", "WF5hw\WF5hw.csproj", "{7DCB0F51-572A-475D-B90E-C4E5C7761B4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5252DF4C-193B-41C4-B886-E304561CA980}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5252DF4C-193B-41C4-B886-E304561CA980}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5252DF4C-193B-41C4-B886-E304561CA980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DCB0F51-572A-475D-B90E-C4E5C7761B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DCB0F51-572A-475D-B90E-C4E5C7761B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DCB0F51-572A-475D-B90E-C4E5C7761B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DCB0F51-572A-475D-B90E-C4E5C7761B4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
