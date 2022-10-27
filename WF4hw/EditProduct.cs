@@ -22,16 +22,6 @@ namespace WF4hw
         public string PName { get => textBoxName.Text; }
         public string PMadeIn { get => textBoxMadeIn.Text; }
         public double PPrice { get => double.Parse(textBoxPrice.Text); }
-        //public Product Product
-        //{
-        //    get { return product; }
-        //    set
-        //    {
-        //        product.Name = textBoxName.Text;
-        //        product.MadeIn = textBoxMadeIn.Text;
-        //        product.Price = Convert.ToDouble(textBoxPrice);
-        //    }
-        //;
         public EditProduct()
         {
             InitializeComponent();
